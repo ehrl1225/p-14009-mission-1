@@ -1,26 +1,24 @@
 package com.back.step8;
 
-public class Content {
+public class WiseSaying {
     public static final int NULL_ID = 0;
     private int id;
     private String content;
     private String author;
 
-    Content(){
+    WiseSaying(){
         id = NULL_ID;
     }
 
-    Content(String content, String author){
+    WiseSaying(String content, String author){
         this.content = content;
         this.author = author;
     }
 
+    // getters
+
     int getId(){
         return id;
-    }
-
-    void setID(int id){
-        this.id = id;
     }
 
     String getContent(){
@@ -29,6 +27,12 @@ public class Content {
 
     String getAuthor(){
         return author;
+    }
+
+    //setter
+
+    void setID(int id){
+        this.id = id;
     }
 
     void setContent(String content){
